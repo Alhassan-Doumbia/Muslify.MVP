@@ -23,3 +23,10 @@ Pour ce Projet , La stack sera la suivante :
 La première étape consistera à mettre en place l'intégration avec l'API Spotify et à finaliser le design de l'application. Ensuite, nous travaillerons sur l'implémentation des fonctionnalités de lecture de musique, de gestion des abonnements et de personnalisation de l'expérience utilisateur. Enfin, nous évaluerons la possibilité d'étendre les fonctionnalités de l'application et d'ajouter de nouveaux contenus en fonction des retours des utilisateurs. 🚀
 
 Restez à l'écoute pour plus de mises à jour sur Muslify ! 📻
+
+## Design de l'interface
+
+![Ecran avec un background bleu ](./MVP-Interface-Design/Screen%201-NoMusic-MainSkin.png "écran inactif")
+![Ecran avec un background bleu avec une liste de résultats de recherches ](./MVP-Interface-Design/Screen2-With%20search%20result.png "écran lors de la recherche et affichage des résultats")
+![Ecran avec un background flou repetant l'image de la cover et avec par dessus une liste de résultats de recherches ](./MVP-Interface-Design/Screen3-With%20On%20going%20Music.png "écran lors de la selection dun titre et lancement du titre")
+
