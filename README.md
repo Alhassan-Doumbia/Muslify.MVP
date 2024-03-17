@@ -10,6 +10,14 @@ Muslify est un projet visant à créer un équivalent de Spotify pour la communa
 - **Inspiré par Spotify** : Le design de Muslify s'inspirera de l'interface utilisateur familière de Spotify pour offrir une expérience familière aux utilisateurs. 🎵
 - **Plans d'abonnement** : Muslify proposera des plans d'abonnement annuels à un prix abordable, avec la possibilité d'une version gratuite financée par la publicité, selon l'évolution du projet. 💰
 
+## Tech-Stack
+Pour ce Projet , La stack sera la suivante :
+- HTML
+- CSS
+- TailWindCSS
+- Javascript
+- (peut être Vue.JS pour la version amliorée du MVP)
+  
 ## Roadmap
 
 La première étape consistera à mettre en place l'intégration avec l'API Spotify et à finaliser le design de l'application. Ensuite, nous travaillerons sur l'implémentation des fonctionnalités de lecture de musique, de gestion des abonnements et de personnalisation de l'expérience utilisateur. Enfin, nous évaluerons la possibilité d'étendre les fonctionnalités de l'application et d'ajouter de nouveaux contenus en fonction des retours des utilisateurs. 🚀
