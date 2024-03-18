@@ -1,0 +1,19 @@
+{
+  "name": "00_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "beautifier": "^0.1.7",
+    "postcss": "^8.4.36"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
