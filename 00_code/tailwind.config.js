@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],// represente les fichiers dans lesquels il doit rechercher les différentes classes Tailwindcss
-  //pour appliquer Tailwindcss
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        backgroundColor:"#000814",
+        textColor:"#FCFCFF",
+        ctaColor:"#3C5DF8"
+      }
+    },
   },
   plugins: [],
 }

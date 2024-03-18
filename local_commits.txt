@@ -15,3 +15,7 @@ previous
 pause
 shuffle
 repeat
+
+
+J'ai étendu mon design system ; au lieu de le faire depuis un fichier css , je compte des classes pour chaque couleurs 
+via le fichier tailwind.config.js
