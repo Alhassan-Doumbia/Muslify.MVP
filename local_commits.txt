@@ -6,3 +6,12 @@ le tout grace à ces commandes :
 git push -u origin main
 git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
 git remote set-head origin -a
+
+
+Pour les icones , je vais utiliser les mots clés suivants : 
+play
+forward
+previous
+pause
+shuffle
+repeat
