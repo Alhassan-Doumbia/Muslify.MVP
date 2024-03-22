@@ -1,10 +1,11 @@
 $primaryColour: #000814;
-$SecondaryColour: #FBFEF9;
+$SecondaryColour: #fbfef9;
 $ternaryColour: #041836;
+$blue: #3c5df8;
 $orange: #ff3d00;
-$inactiveColour: #686666;
+$inactiveColour: #c8cde3;
 
-$FontFamily: "DM sans", sans-serif;
+$FontFamily: "helvetica-rounded", sans-serif;
 $Regular: 400;
 $Medium: 500;
 $bold: 800;
@@ -12,15 +13,22 @@ $bold: 800;
 $containerWidth: 580px;
 $containerMinHeight: 62px;
 $inputFieldContainerMinHeigth: 268px;
-$Size: 18px;
+$regularSize: 18px;
+$headline: 24px;
+$minimalSize: 16px;
+
 $color: transparent;
 
 @mixin inputField {
-  width: 480px;
-  height: 50px;
-  border-radius: 10px;
+  transition: all ease-in-out 700ms;
+  width: 300px;
+  height: 48px;
+  border-radius: 45px;
   outline: none;
   border: 1px solid #c7bfbf;
+  background-color: #041836;
+  color: $SecondaryColour;
+  font-size: $minimalSize;
 
   padding-left: 10px;
   padding-right: 10px;
@@ -29,9 +37,15 @@ $color: transparent;
     font-size: 10px;
     font-family: $FontFamily;
   }
-  :invalid {
+  &:invalid {
     border: 1px solid red;
     transition: all ease-in-out 1s;
+  }
+  &:focus {
+    transition: all ease-in-out 700ms;
+    -webkit-box-shadow:0px 0px 95px 0px rgba(60,95,248,0.9);
+    -moz-box-shadow: 0px 0px 95px 0px rgba(60,95,248,0.9);
+    box-shadow: 0px 0px 60px 0px rgba(60,95,248,0.9);
   }
 }
 @mixin submittingButton {
@@ -45,11 +59,130 @@ $color: transparent;
 
   cursor: pointer;
 }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
 
-header{
-  width:100%;
-  min-height:$containerMinHeight;
-  height: fit-content;
+  border: 1px solid purple
+}
+// importation des fonts
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap");
+@font-face {
+  font-family: "Helvetica-rounded";
+  src: url("00_code-native-config/01_assets/helvetica-rounded-bold-5871d05ead8de.otf");
+}
+//fin des importation des polices
+body {
   background-color: $primaryColour;
+}
+header {
+  width: 100%;
+  height: fit-content;
+  nav {
+    width: 100%;
+    height: fit-content;
+    min-height: $containerMinHeight;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color:transparent;
+
+    .userProfile-wrapper {
+      display: flex;
+      height: fit-content;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+
+      .userProfilePicture {
+        background-image: url("01_assets/userPicPlaceHolder.jpg");
+        background-size: cover;
+        // background-color: #ff3d00;
+
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+      }
+      .userProfileName {
+        font-family: $FontFamily;
+        font-size: $minimalSize;
+        font-weight: $Medium;
+        color: $SecondaryColour;
+      }
+    }
+  }
+}
+main {
+  // background-color: red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 45px;
+  .main-ResearchZone {
+    width: 100%;
+    min-height: $containerMinHeight;
+    // background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .headlines {
+      font-size: $headline;
+      font-weight: $bold;
+      color: $SecondaryColour;
+
+      text-transform: capitalize;
+    }
+    form {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      // label{
+      ion-icon {
+        font-size: $headline;
+        font-weight: $bold;
+        color: $SecondaryColour;
+        text-transform: capitalize;
+      }
+      input[type="text"] {
+        @include inputField();
+        border: none;
+      }
+    }
+  }
+  .main-SongDisplayZone {
+    width: 100%;
+    height: 100vh;
+
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background-color:transparent;
+    ul {
+      width: 100%;
+      min-height: 100vh;
+      height: fit-content;
+    }
+    p {
+      color: $ternaryColour;
+      font-weight: $Medium;
+      font-size: $regularSize;
+    }
+  }
 }
