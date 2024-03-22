@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="03_sass-files/global-style.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Muslify.MVP</title>
-</head>
-<body>
-    <header><!-- la Navbar-->
-        <img src="" alt="">
+  </head>
+  <body>
+    <header>
+      <!-- la Navbar-->
+      <nav>
+        <img src="01_assets\Muslify-Logo.png" alt="" />
         <div class="userProfile-wrapper">
-            <div class="userProfilePicture"></div>
-            <p class="userPprofileName"></p>
+          <div class="userProfilePicture"></div>
+          <p class="userProfileName">Al Hassan Doumbia</p>
         </div>
+      </nav>
     </header>
     <main>
-        <section class="musicRelatedContent">
-            <div class="sideBar"></div>
-            <div class="musicList"></div>
-        </section>
+      <section class="main-ResearchZone">
+        <h2 class="headlines">La liste</h2>
+        <form action="#">
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="entrez ici"
+            autocomplete="off"
+          />
+        </form>
+      </section>
+      <section class="main-SongDisplayZone">
+        <!-- <ul class="song-Container"><!--Quand il n'y a pas de contenu , cette zone est à retirer et àremplacer par 
+        ce p-->
+        </ul> -->
+        <p>Aucun titre</p>
+      </section>
     </main>
     <footer></footer>
-</body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
 </html>
+
+<!-- La partie  -->

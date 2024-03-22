@@ -1,3 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 1px solid purple;
+}
 
+@font-face {
+  font-family: "Helvetica-rounded";
+  src: url("00_code-native-config/01_assets/helvetica-rounded-bold-5871d05ead8de.otf");
+}
+body {
+  background-color: #000814;
+}
+
+header {
+  width: 100%;
+  height: fit-content;
+}
+header nav {
+  width: 100%;
+  height: fit-content;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: transparent;
+}
+header nav .userProfile-wrapper {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+}
+header nav .userProfile-wrapper .userProfilePicture {
+  background-image: url("01_assets/userPicPlaceHolder.jpg");
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+header nav .userProfile-wrapper .userProfileName {
+  font-family: "helvetica-rounded", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fbfef9;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 45px;
+}
+main .main-ResearchZone {
+  width: 100%;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .main-ResearchZone .headlines {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fbfef9;
+  text-transform: capitalize;
+}
+main .main-ResearchZone form {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main .main-ResearchZone form ion-icon {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fbfef9;
+  text-transform: capitalize;
+}
+main .main-ResearchZone form input[type=text] {
+  transition: all ease-in-out 700ms;
+  width: 300px;
+  height: 48px;
+  border-radius: 45px;
+  outline: none;
+  border: 1px solid #c7bfbf;
+  background-color: #041836;
+  color: #fbfef9;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+main .main-ResearchZone form input[type=text] ::placeholder {
+  color: #c8cde3;
+  font-size: 10px;
+  font-family: "helvetica-rounded", sans-serif;
+}
+main .main-ResearchZone form input[type=text]:invalid {
+  border: 1px solid red;
+  transition: all ease-in-out 1s;
+}
+main .main-ResearchZone form input[type=text]:focus {
+  transition: all ease-in-out 700ms;
+  -webkit-box-shadow: 0px 0px 95px 0px rgba(60, 95, 248, 0.9);
+  -moz-box-shadow: 0px 0px 95px 0px rgba(60, 95, 248, 0.9);
+  box-shadow: 0px 0px 60px 0px rgba(60, 95, 248, 0.9);
+}
+main .main-SongDisplayZone {
+  width: 100%;
+  height: 100vh;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+main .main-SongDisplayZone ul {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+}
+main .main-SongDisplayZone p {
+  color: #041836;
+  font-weight: 500;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */
