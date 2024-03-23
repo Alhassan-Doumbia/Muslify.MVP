@@ -25,3 +25,6 @@ via le fichier tailwind.config.js
 pourquoi ? j'ai decidé de faire le MVP en natif en me passant de framework pour le moment -Tailwind me fait chier ) du coups 
 je compte developper le MVP en natif et faire le rojet complet en tailwind , ça me laisse donc le temps d'apprendre la techno 
 et d'voluer un peu plus vite sur le MVP , je risque de me faire chier sur 
+
+
+22-03-2024 : je dois push les modifications que j'ai eu à faire 
