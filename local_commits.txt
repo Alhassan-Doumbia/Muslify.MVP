@@ -28,3 +28,6 @@ et d'voluer un peu plus vite sur le MVP , je risque de me faire chier sur
 
 
 22-03-2024 : je dois push les modifications que j'ai eu à faire 
+
+29-03-2024 : j'ai créé un folder par composant dans le fihier component
+30-03-2024(01:03) j'ai fini le composant du player et j'ai une idée de comment celui ci est sensé fonctionner 
