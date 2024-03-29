@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #041836; 
+}
+.player_container{
+    background-color: red;
+    min-width: 500px;
+    min-height: 250px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+
+}
+.player_command_container{
+    background-color: wheat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 100px;
+    min-height: 50px;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+.player_command_container div{
+    color: #041836;
+    font-size:24px;
+    padding: 5px;
+    cursor: pointer;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pause-play{
+    border-radius:48px;
+    background-color: white;
+}
+
+.player_progressBar{
+    background-color: wheat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 100px;
+    min-height: 50px;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+.player_progressBar div{
+    display: flex;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #041836;
+}
+.progressBarTrack{
+    background-color: gray;/*à changer*/
+    width: 700px;
+    height: 10px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.progression{
+    height:100%;
+    min-width:50px;/*Pour tester et voir à quoi ça ressemble*/
+    border-radius: 10px;
+
+    background-color:#3c5df8;
+    -webkit-box-shadow:0px 0px 112px 28px rgba(3,197,223,0.58);
+    -moz-box-shadow: 0px 0px 112px 28px rgba(3,197,223,0.58);
+    box-shadow: 0px 0px 112px 28px rgba(3,197,223,0.58);
+
+    transition: all .2s ease-in
+}
