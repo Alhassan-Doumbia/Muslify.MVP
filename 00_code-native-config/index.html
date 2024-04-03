@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="./02_Components/style.css">
+    <link rel="stylesheet" href="./02_Components/player_component/style_player.css">
     <title>Muslify.MVP</title>
   </head>
   <body>
@@ -51,6 +52,36 @@
         </ul> -->
         <p>Aucun titre</p>
       </section>
+
+      <!-- Plaayer component  -->
+      <div class="player_container">
+        <div class="player_command_container">
+          <div id="shuffle"><i class="fa-solid fa-shuffle"></i></div>
+          <div id="back"><i class="fa-solid fa-backward"></i></div>
+          <div id="pause-play"><i class="fa-solid fa-play"></i></div>
+          <div id="next"><i class="fa-solid fa-forward"></i></div>
+          <div id="repeat"><i class="fa-solid fa-repeat"></i></div>
+        </div>
+
+        <div class="player_progressBar">
+            <div class="updated_duration">
+                <p id="minute">0</p>
+                <p>:</p>
+                <p id="second">00</p>
+            </div>
+
+            <div class="progressBarTrack">
+                <div class="progression"></div>
+            </div>
+
+            <div class="final_duration">
+                <p id="f_minute">0</p>
+                <p>:</p>
+                <p id="f_second">00</p>
+            </div>
+        </div>
+      </div>
+      <!-- Fin player component  -->
     </main>
     <footer></footer>
 
