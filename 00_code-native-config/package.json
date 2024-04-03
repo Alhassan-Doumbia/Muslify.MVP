@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "howler": "^2.2.4",
     "sass": "^1.72.0"
   }
 }
