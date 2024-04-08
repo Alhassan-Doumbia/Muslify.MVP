@@ -31,3 +31,10 @@ et d'voluer un peu plus vite sur le MVP , je risque de me faire chier sur
 
 29-03-2024 : j'ai créé un folder par composant dans le fihier component
 30-03-2024(01:03) j'ai fini le composant du player et j'ai une idée de comment celui ci est sensé fonctionner 
+
+02-04-2024 : Je commence la logique métier ; il s'agira d'integrer les différentes 
+biliothèques et API pour faire fonctioner le composant de player que j'ai mis en place 
+
+03-04-2024 : Ajout de la librairie Howler
+
+ 
